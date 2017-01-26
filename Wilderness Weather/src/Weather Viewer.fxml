@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="410.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.WeatherStationController">
+   <top>
+      <ToolBar prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <items>
+          <Button fx:id="forecastButton" mnemonicParsing="false" onAction="#onForecastButtonClick" text="Forecast" />
+            <Button fx:id="currentWeatherButton" mnemonicParsing="false" onAction="#OnCurrentWeatherClick" text="Current" />
+            <Button fx:id="historicalWeatherButton" mnemonicParsing="false" onAction="#onHistoricalWeatherClick" text="Historical" />
+        </items>
+      </ToolBar>
+   </top>
+   <center>
+      <Label fx:id="label" BorderPane.alignment="CENTER" />
+   </center>
+   <left>
+      <TextField fx:id="myTextField" BorderPane.alignment="CENTER" />
+   </left>
+   <right>
+      <ImageView fx:id="myImageView" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER" />
+   </right>
+</BorderPane>
